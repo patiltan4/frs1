@@ -5,11 +5,19 @@ public class Contact {
     public String phone;
     public String email;
 
-    public String getContactDetails(){
+    public Contact(String name, String phone, String email) {
+        this.name = name;
+        this.phone = phone;
+        this.email = email;
+    }
 
-        return null;
+    public String getContactDetails(){
+       Contact contact = new Contact(name,phone,email);
+       return String.valueOf(contact);
     }
     public void updateContactDetails(String contactDetail){
-
+       this.name = name;
+       this.phone = phone;
+       this.email = email;
     }
 }

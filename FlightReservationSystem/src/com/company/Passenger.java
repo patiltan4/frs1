@@ -7,10 +7,10 @@ public class Passenger {
 
     public Contact getContact(){
 
-        return null;
+        return contact;
     }
     public Address getAddress(){
 
-        return null;
+        return address;
     }
 }
